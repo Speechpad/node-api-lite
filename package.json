@@ -1,0 +1,22 @@
+{
+  "name": "speechpad-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "3.4.6",
+    "dateformat": "1.0.12",
+    "hmacsha1": "1.0.0",
+    "minimist": "1.2.0",
+    "node-fetch": "1.6.3",
+    "phpdate-js": "1.0.2",
+    "querystring": "0.2.0",
+    "utils": "0.3.1"
+  }
+}

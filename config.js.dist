@@ -1,0 +1,17 @@
+
+var environments = {
+    'sandbox' : {
+        'url' : 'https://dev2.speechpad.com/services',
+        'access_key': '',
+        'secret_key': ''
+    },
+    'production': {
+        'url' : 'http://speechpad.com/services',
+        'access_key': '',
+        'secret_key': ''
+    }
+};
+
+var environment = 'sandbox';
+
+module.exports = environments[environment];
