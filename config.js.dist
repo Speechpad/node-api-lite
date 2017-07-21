@@ -1,12 +1,12 @@
 
 var environments = {
     'sandbox' : {
-        'url' : 'https://dev2.speechpad.com/services',
+        'url' : 'https://dev.speechpad.com/services',
         'access_key': '',
         'secret_key': ''
     },
     'production': {
-        'url' : 'http://speechpad.com/services',
+        'url' : 'https://www.speechpad.com/services',
         'access_key': '',
         'secret_key': ''
     }
