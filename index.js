@@ -1,25 +1,11 @@
 "use strict"
 
 var config = require("./config");
+var generateSignature = require("./sign.js");
 var fetch = require('node-fetch');
 var querystring = require('querystring');
 var gmdate = require('phpdate-js').gmdate;
-var hmacsha1 = require('hmacsha1');
 
-function generateSignature(params)
-{
-    var s = "";
-    var keys = Object.keys(params);
-    keys.sort();
-    var i, len = keys.length;
-
-    for(i = 0; i < len; i++) {
-        s += params[keys[i]];
-    }
-    params['signature'] = hmacsha1(config.secret_key, s);
-
-    return params;
-}
 /**
 * Create and send request to Speechpad API
 * @param  {object}   parameters Parameters used to form request
@@ -37,3 +23,9 @@ function call (parameters) {
 }
 
 module.exports = call;
+/*
+module.exports = {
+  call: call,
+  generateSignature: generateSignature
+};
+*/

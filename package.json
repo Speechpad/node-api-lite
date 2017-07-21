@@ -1,6 +1,6 @@
 {
   "name": "speechpad-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "node-fetch": "1.6.3",
     "phpdate-js": "1.0.2",
     "querystring": "0.2.0",
+    "request": "^2.81.0",
     "utils": "0.3.1"
   }
 }
